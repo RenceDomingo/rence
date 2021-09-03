@@ -291,7 +291,10 @@
         display: flex;
         flex-direction: column;
     }
-
+    .row-cards-graphics > .cards-graphic {
+        width: auto;
+        height: 100px;
+    }
 
 }
 
