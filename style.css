@@ -1,6 +1,7 @@
 /* ---------------Global Css--------------------------------- */
     html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     :root {
