@@ -1,0 +1,294 @@
+/* ---------------Global Css--------------------------------- */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        /* Font style  */
+        --main-heading: 'Open Sans', sans-serif;
+        --sub-heading: 'Mulish', sans-serif;
+        --paragraph-text: 'Mulish', sans-serif;
+
+        /* Global Colors  */
+        --grey-color: #F8F8F8;
+        --orange-color: #f16232;
+        --orange-font-color: #f16232;
+        --black-font-color: #2d2d2d;
+        --orange-button-color: #f16232;
+    }
+
+    body {
+        margin: 0%;
+    }
+    
+    hr {
+        width: 500px;
+        border-top: 2px solid;
+        color: var(--orange-color);
+    }
+
+    h1 {
+        font-family: var(--main-heading);
+        color: var(--orange-font-color);
+        font-size: 50px;
+    }
+
+    h2 {
+        font-family: var(--sub-heading);
+        color: var(--black-font-color);
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    h3 {
+        font-family: var(--sub-heading);
+        color: var(--black-font-color);
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    p {
+        font-family: var(--paragraph-text);
+        color: var(--black-font-color);
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    a.button {
+        text-decoration: none;
+        font-family: var(--paragraph-text);
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        padding: 15px 30px 15px 30px;
+        border: 0px;
+        background-color: var(--orange-button-color);
+    }
+
+/* ------------------End------------------------  */
+
+/* ----------------Hero Section--------------------  */
+
+    .hero-section {
+        display: flex;
+        padding: 10px;
+        text-align: center;
+        height: 700px;
+        background-color: var(--grey-color);
+    }
+
+    .hero-section > div {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .hero-button {
+        margin-top: 30px;
+    }
+
+/* ------------------End------------------------  */
+
+/* -----------------Introduction-----------------  */
+    img.profile {
+       border-radius: 300px; 
+       height: 270px;
+       border: 5px solid var(--orange-color);
+       padding: 10px;
+       /* width: 300px; */
+    }
+    .introduction {
+        display: flex;
+        padding: 10px;
+        text-align: center;
+        margin: 150px 0 150px 0;
+    }
+
+    .introduction > div {
+        /* padding: 80px 0 80px 0; */
+        width: 1200px;
+        margin: auto;
+    }
+    .introduction > div > div > h2 > span {
+        color: var(--orange-font-color);
+    }
+
+    .intro-button {
+        margin-top: 30px;
+    }
+
+/* ------------------End------------------------  */
+
+
+/* ----------------- Projects ------------------ */
+    .my-projects {    
+        padding: 40px 0 40px 0;
+        display: flex;
+        text-align: center;
+        margin: 150px 0 0px 0;
+        background-color: var(--orange-color);
+        /* border-bottom: 1px solid #FFFFFF; */
+
+    }
+    .my-projects > div {
+        width: 1200px;
+        margin: auto;
+    }
+    .my-project-heading {
+        color: #FFFFFF
+    }
+    .row-cards {
+        margin: 30px 0 30px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .row-cards > .cards {
+        width: 350px;
+        height: 230px;
+        margin: 10px;
+        background-size: 100% 100%;
+        border: 3px solid #FFFFFF;
+    }
+    .cards:hover {
+        transform: scale(1.5);
+        transition: all .3s ease-out;
+        opacity: 90%;   
+    }
+    .content {
+        display: none;
+    }
+    .cards:hover .content {
+        display: block;
+        margin: 10em 0 2em 0;
+        z-index: 99;
+    }
+    .content a {
+        padding: 10px 30px 10px 30px;
+        font-size: 10px;
+        font-family: var(--paragraph-text);
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: var(--orange-button-color);
+    }
+
+/* ------------------End------------------------  */
+
+/* --------------- Graphics------------------  */
+    .graphics {    
+        display: flex;
+        
+        text-align: center;
+        margin: 150px 0 150px 0;
+    }
+    .graphics > div {
+        width: 1200px;
+        margin: auto;
+    }
+    .row-cards-graphics {
+        margin: 30px 0 30px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .row-cards-graphics > .cards-graphic {
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+        /* border: 3px solid #f16232; */
+        /* object-fit: cover; */
+    }
+    .row-cards-graphics > .cards-graphic img {
+        /* width: 100%; */
+        height: 200px;
+    }
+    div > h2 > span {
+        color: var(--orange-font-color);
+    }
+/* ------------------End------------------------  */
+
+/* ----------- Footer --------------------------  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /* width: 1200px; */
+        padding: 30px 0 30px 0;
+        text-align: center;
+        background-color: var(--orange-color);
+        /* background-color: var(--grey-color); */
+    }
+    .footer > div {
+        
+        margin: auto;
+    }
+    .footer-heading {
+        color: #FFFFFF;
+    }
+    .footer-text {
+        color: #FFFFFF;
+    }
+    .footer-text a {
+        color: #FFFFFF;
+    }
+    .logo {
+        height: 150px;
+        margin-top: 30px;
+    }
+    
+
+/* ---- Responsive ----------- */
+@media screen and (max-width: 1120px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    hr {
+        width: 300px;
+    }
+    
+    .row-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .row-cards-graphics {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .profile {
+        width: 250px;
+        height: 250px!important;
+    }
+    
+    .cards {
+        width: 300px!important;
+        height: 200px!important;
+    }
+    .logo {
+        height: 100px!important;
+        margin-top: 30px;
+    }
+    .cards:hover {
+        transform: none;
+        transition: none;
+        opacity: 90%;   
+    }
+
+    .row-cards-graphics {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
