@@ -260,6 +260,10 @@
         display: flex;
         flex-direction: column;
     }
+    .row-cards-graphics > .cards-graphic {
+        width: auto;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -297,4 +301,8 @@
     }
 
 }
-
+@media screen and (min-width: 1121px) {
+    .row-cards-graphics > .cards-graphic > img {
+        width: 350px;
+    }
+}
